@@ -42,7 +42,6 @@ export default {
   display: flex; //设置flex布局
   flex-wrap: wrap; //换行排列
   justify-content: space-between; //两端对齐
-  padding-bottom: 55px;
 }
 //视频个体层
 .course {

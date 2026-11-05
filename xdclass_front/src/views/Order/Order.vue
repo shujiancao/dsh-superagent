@@ -26,21 +26,13 @@
             <p>暂未购买课程 </p>
         </div>
 
-    <!--底部导航-->
-        <common-footer></common-footer>
-
     </div>
 </template>
 <script>
 
-import CommonFooter from '@/components/CommonFooter'
 import { getOrderList } from "@/api/getData.js";
 
 export default {
-
-    components:{
-        CommonFooter
-    },
 
     data(){
         return{

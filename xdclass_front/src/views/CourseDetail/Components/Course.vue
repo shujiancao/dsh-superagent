@@ -38,6 +38,7 @@
 </script>
 
 <style lang="scss" scoped>
+@import "../../../assets/styles/variables";
 //包裹层
 .c_wrapper {
     padding: 0 14px;
@@ -71,7 +72,7 @@
     & p {
         text-align:center;
         width:40%;
-        color:#3bb149;
+        color: $brand-green;
     }   
     & i {
         color:#666;
