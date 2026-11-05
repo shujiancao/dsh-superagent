@@ -15,7 +15,8 @@ Vue.use(VueRouter)
     {
       path:"/",
       name:"Home",
-      component:Home
+      component:Home,
+      meta:{ tab:{ label:"首页", icon:"cubeic-home" } }
     },
     {
       path:"/coursedetail",
@@ -33,7 +34,7 @@ Vue.use(VueRouter)
       path:"/order",
       name:"Order",
       component:Order,
-      meta:{ requiresAuth : true}
+      meta:{ requiresAuth : true, tab:{ label:"我的订单", icon:"cubeic-like" } }
     },{
       path:"/pay",
       name:"Pay",
@@ -43,7 +44,7 @@ Vue.use(VueRouter)
       path:"/personal",
       name:"Personal",
       component:Personal,
-      meta:{ requiresAuth : true}
+      meta:{ requiresAuth : true, tab:{ label:"个人中心", icon:"cubeic-person" } }
 
     },{
       path:"/register",

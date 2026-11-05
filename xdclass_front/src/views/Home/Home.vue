@@ -4,8 +4,6 @@
     <home-banner :banners="banners"></home-banner>
     <!-- 视频列表组件 -->
     <video-list :videoList="videoList"></video-list>
-    <!-- 底部导航栏组件 -->
-    <common-footer></common-footer>
   </div>
 </template>
 
@@ -13,15 +11,13 @@
 <script>
 import HomeBanner from "./Component/Banner";
 import VideoList from "./Component/VideoList";
-import CommonFooter from "@/components/CommonFooter";
 import { getBanner, getVideoList } from "@/api/getData.js";
 
 export default {
   //注册组件
   components: {
     HomeBanner,
-    VideoList,
-    CommonFooter
+    VideoList
   },
   //声明数据源
   data() {

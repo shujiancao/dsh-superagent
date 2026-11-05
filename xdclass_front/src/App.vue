@@ -1,8 +1,25 @@
 <template>
   <div id="app">
     <router-view/>
+    <common-footer v-if="showFooter"/>
   </div>
 </template>
+
+<script>
+import CommonFooter from "@/components/CommonFooter";
+
+export default {
+  name: "App",
+  components: {
+    CommonFooter
+  },
+  computed: {
+    showFooter() {
+      return Boolean(this.$route.meta.tab);
+    }
+  }
+};
+</script>
 
 <style lang="scss">
 #app {

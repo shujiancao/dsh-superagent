@@ -14,20 +14,14 @@
             退出登录
         </button>
     </div>
-    <common-footer></common-footer>
   </div>
 </template>
 
 <script>
-import CommonFooter from "@/components/CommonFooter";
 import { getUserInfo } from "@/api/getData.js";
 import defaultHeadImg from "@/assets/logo.png";
 
 export default {
-  components: {
-    CommonFooter
-  },
-
   data() {
     return {
       info: {},
@@ -74,6 +68,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/styles/variables";
+
 .container {
   // 顶部头像区域
   .p_top {
@@ -101,7 +97,7 @@ export default {
 // 退出登录
 .green {
   display: block;
-  background-color: #3bb149;
+  background-color: $brand-green;
   border: none;
   outline: none;
   width: 80%;
